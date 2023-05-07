@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Background Image Sections</title>
+    <style>
+      /* Set up the background image sections */
+      .background-section {
+        position: relative;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      /* Set up the text in the first section */
+      .first-section-top-right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+      }
+
+      .first-section-bottom-right {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+      }
+
+      /* Set up responsiveness for the background image sections */
+      @media (max-width: 768px) {
+        .background-section {
+          height: 50vh;
+        }
+        .first-section-top-right,
+        .first-section-bottom-right {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="background-section"
+      style="background-image: url('.//assets/hero-img.png')"
+    >
+      <div class="first-section-top-right">
+        <div
+          style="
+            color: #ff000e;
+            font-size: 50px;
+            font-weight: 900;
+            display: inline;
+            cursor: pointer;
+          "
+        >
+          CJC
+          <span style="display: flex; color: #fff; font-size: 18px"
+            >Creative</span
+          ><span style="display: flex; color: #fff; font-size: 18px">Jump</span
+          ><span style="display: flex; color: #fff; font-size: 18px"
+            >Cosulting</span
+          >
+        </div>
+      </div>
+      <div class="first-section-bottom-right">
+        <h2 style="color: #fff; font-size: 18px; font-weight: 300">
+          Say <strong>hello</strong> to one in a million, say
+          <strong>hello</strong> to genuis.
+        </h2>
+
+        <a
+          style="
+            justify-content: end;
+            display: flex;
+            color: #fff;
+            text-decoration: none;
+          "
+          href="www.meetcjc.com"
+          >www.meetcjc.com</a
+        >
+      </div>
+    </section>
+    <section
+      class="background-section"
+      style="background-image: url('.//assets/Layer2.png')"
+    >
+      <div
+        class="say"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        "
+      >
+        <h1
+          class="hello"
+          style="
+            text-align: center;
+            font-size: 100px;
+            color: #fff;
+            font-weight: bold;
+            justify-content: center;
+          "
+        >
+          Say Hello
+          <a
+            href="hello@meetcjc.com"
+            style="
+              font-size: 14px;
+              font-weight: 300;
+              justify-content: end;
+              display: flex;
+              color: #fff;
+              text-decoration: none;
+
+              margin-top: -18px !important;
+            "
+          >
+            hello@meetcjc.com</a
+          >
+        </h1>
+        <div class="first-section-bottom-right">
+          <h2 style="color: #fff; font-size: 18px; font-weight: 300">
+            We are a young dynamic,boutique consutancy, <br />
+            specialized in brand marketing and communications.
+          </h2>
+
+          <h2
+            style="
+              justify-content: end;
+
+              color: #fff;
+              font-size: 18px;
+              font-weight: 300;
+            "
+          >
+            We offer high end competitive solutions to <br />
+            stand out from the crowd.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section
+      class="background-section"
+      style="background-image: url('.//assets/Layer3.png')"
+    >
+      <div
+        class="say"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        "
+      >
+        <h1
+          class="hello"
+          style="
+            text-align: center;
+            font-size: 100px;
+            color: #fff;
+            font-weight: bold;
+            justify-content: center;
+          "
+        >
+          to our
+        </h1>
+        <div class="first-section-bottom-right">
+          <h2
+            style="
+              color: #fff;
+              font-size: 16px;
+              font-weight: 300;
+              padding-right: 40px;
+            "
+          >
+            a. customers<br />
+            b. services <br />
+            c. solutions <br />
+            d. cup of coffee
+          </h2>
+        </div>
+      </div>
+      <h2
+        style="
+          justify-content: end;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 300;
+          position: absolute;
+          bottom: 20px;
+          padding-left: 50px;
+          color: white;
+        "
+      >
+        Office 104 - 105, 1st Floor, Emaar Square, Building 4, <br />
+        Sheikh Mohammed Bin Rashid Boulevard, Downtown Dubai, Dubai UAE
+      </h2>
+    </section>
+  </body>
+</html>
